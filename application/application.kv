@@ -1,0 +1,148 @@
+<ScreenManagement>:
+    id: screen_manager
+    homescreen: homescreen
+    devicescreen: devicescreen
+    HomeScreen:
+        id: homescreen
+        name: "shome"
+        manager: screen_manager
+    DeviceScreen:
+        id: devicescreen
+        name: "sdevice"
+        manager: screen_manager
+
+<DeviceScreen>:
+    name: "sdevice"
+    BoxLayout:
+        orientation: "vertical"
+
+        MDTopAppBar:
+            elevation:dp(5)
+            markup: True
+            id: mainbar
+            anchor_title:'center'
+            title: app.device_name
+            specific_text_color: 1,1,1,1
+            md_bg_color: 0, 0, 0, 1
+            left_action_items: [["arrow-left", lambda x: app.back()]]
+
+        BoxLayout:
+            orientation: "horizontal"
+
+            BoxLayout:
+                orientation: "vertical"
+                size_hint_x: 0.4
+
+                GridLayout:
+                    id: circular_led_grid
+                    cols: 4
+                    spacing: dp(-26)
+                    padding: dp(0)
+
+            BoxLayout:
+                orientation: "vertical"
+                size_hint_x: 0.6
+                padding: dp(15), 0, 0, 0  # Add padding to the left
+
+                GridLayout:
+                    id: rectangular_led_grid
+                    cols: 6
+                    spacing: dp(10)
+                    padding: dp(20)
+    FloatLayout:
+        MDLabel:
+            text: 'Change all LEDs'
+            pos_hint: {'center_x': .578,'center_y': 0.645}
+        MDRaisedButton:
+            pos_hint: {'center_x': .252,'center_y': 0.6}
+            md_bg_color:'white'
+            id:allights
+            on_release:
+                app.led_action('all')
+
+
+<HomeScreen>:
+    mylist: mylist
+    name: "shome"
+    
+    
+    
+    BoxLayout:
+        orientation: "vertical"
+
+        MDTopAppBar:
+            elevation:dp(5)
+            markup: True
+            id: mainbar
+            anchor_title:'center'
+            title: 'B/S/H devices'
+            specific_text_color: 1,1,1,1
+            md_bg_color: 0, 0, 0, 1
+            left_action_items: [["plus-box", lambda x: app.popup()]]
+
+        MDBottomNavigation:
+
+            panel_color: "black"
+            text_color_active: "lightgray"
+            selected_color_background: 0, 0, 1, .0
+
+            MDBottomNavigationItem:
+               # on_tab_press:app.nemas_testy(root.parent)
+                id:first_item
+                md_bg_color: [0.07,0.07,0.072,1]
+                name: 'screen 1'
+                text: 'Devices'
+                icon: 'devices'
+                ScrollView:
+                    
+                    size_hint: 1, 1
+                    MDList:
+                        padding: dp(10),0,dp(10),0
+                        id: mylist
+
+            # MDBottomNavigationItem:
+            #     md_bg_color: [0.07,0.07,0.072,1]
+            #     name: 'screen 2'
+            #     text: 'Chyby'
+            #     icon: 'alert-circle'
+            #     on_tab_press:app.wrong_tab()
+            #     # on_leave:app.left()
+            #     BoxLayout:
+            #         id: fav
+            #         ScrollView:
+            #             do_scroll_x: False
+            #             id: scroll
+            #             MDList:
+            #                 id:list_wrong
+            #                 # padding: dp(-0.5)
+
+            # MDBottomNavigationItem:
+            #     md_bg_color: [0.07,0.07,0.072,1]
+            #     name: 'screen 3'
+            #     text: 'Obľúbené'
+            #     icon: 'star'  
+            #     on_tab_press:app.fav()
+            #     # on_leave:app.left()
+            #     BoxLayout:
+            #         id: fav
+            #         ScrollView:
+            #             do_scroll_x: False
+            #             id: scroll
+            #             MDList:
+            #                 id:list
+            #                 # padding: dp(-0.5)
+
+            MDBottomNavigationItem:
+                md_bg_color: [0.07,0.07,0.072,1]
+                name: 'screen 4'
+                text: 'Settings'
+                icon: 'cog'
+
+                ScrollView:
+                    
+                    size_hint: 1, 1
+                    MDList:
+                        padding: dp(10),dp(5),dp(10),0
+                        id: settingy
+                        spacing:dp(10)
+
