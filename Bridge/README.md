@@ -20,6 +20,3 @@ You need to have uvicorn installed in order to start the server and then you can
 ```bash
 uvicorn main:app --reload
 ```
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
