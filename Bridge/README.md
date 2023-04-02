@@ -16,7 +16,7 @@ POST /set-device/{led_id}
 ```
 Set data for specific device
 ## Usage
-Install required packages
+Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
