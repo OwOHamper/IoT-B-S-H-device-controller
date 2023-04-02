@@ -1,0 +1,9 @@
+../../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1931:22:LL_RCC_SetUSARTClockSource	16	static
+../../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:1972:22:LL_RCC_SetI2CClockSource	16	static
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/stm32g0xx_hal_msp.c:63:6:HAL_MspInit	16	static
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/stm32g0xx_hal_msp.c:89:6:HAL_I2C_MspInit	56	static
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/stm32g0xx_hal_msp.c:126:6:HAL_I2C_MspDeInit	16	static
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/stm32g0xx_hal_msp.c:157:6:HAL_TIM_Base_MspInit	24	static
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/stm32g0xx_hal_msp.c:190:6:HAL_TIM_Base_MspDeInit	16	static
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/stm32g0xx_hal_msp.c:223:6:HAL_UART_MspInit	56	static
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/stm32g0xx_hal_msp.c:261:6:HAL_UART_MspDeInit	16	static

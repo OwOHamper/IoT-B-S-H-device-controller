@@ -1,0 +1,3 @@
+callbacks.c:40:6:HAL_UART_RxCpltCallback	2
+callbacks.c:58:6:HAL_GPIO_EXTI_Callback	3
+callbacks.c:81:6:HAL_TIM_PeriodElapsedCallback	3

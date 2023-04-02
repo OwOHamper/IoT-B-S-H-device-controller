@@ -1,0 +1,13 @@
+/*
+ * bsp_ip_conf.h
+ *
+ *  Created on: Apr 2, 2023
+ *      Author: Hamper
+ */
+
+#ifndef APPLICATION_CUSTOM_INCLUDE_BSP_IP_CONF_H_
+#define APPLICATION_CUSTOM_INCLUDE_BSP_IP_CONF_H_
+
+
+
+#endif /* APPLICATION_CUSTOM_INCLUDE_BSP_IP_CONF_H_ */

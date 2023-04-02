@@ -1,0 +1,24 @@
+10:07:52 **** Incremental Build of configuration Debug for project GPIO_InfiniteLedToggling_Init ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32G0B1xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -c -I../../Inc -I../../Drivers/STM32G0xx_HAL_Driver/Inc -I../../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../../Drivers/CMSIS/Include -I../../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I"C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/STM32CubeIDE/Application/Custom/Include" -I"C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Drivers/BSP/Components/led1202" -I"C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Drivers/BSP/LED12A1" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Application/User/main.o"
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/main.c: In function 'main':
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/main.c:205:32: warning: comparison between pointer and integer
+  205 |   if (LED1202Obj.IsInitialized == NULL)
+      |                                ^~
+C:/Users/Hamper/Downloads/en.x-cube-led12a1/STM32CubeExpansion_LED12A1_V1.0.0/Projects/NUCLEO-L073RZ/Applications/testled/GPIO_InfiniteLedToggling_Init/Src/main.c:203:7: warning: variable 'test' set but not used [-Wunused-but-set-variable]
+  203 |   int test = 69;
+      |       ^~~~
+arm-none-eabi-gcc -o "GPIO_InfiniteLedToggling_Init.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Hamper\Downloads\en.x-cube-led12a1\STM32CubeExpansion_LED12A1_V1.0.0\Projects\NUCLEO-L073RZ\Applications\testled\GPIO_InfiniteLedToggling_Init\STM32CubeIDE\STM32G0B1RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO_InfiniteLedToggling_Init.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO_InfiniteLedToggling_Init.elf
+ 
+arm-none-eabi-size   GPIO_InfiniteLedToggling_Init.elf 
+arm-none-eabi-objdump -h -S  GPIO_InfiniteLedToggling_Init.elf  > "GPIO_InfiniteLedToggling_Init.list"
+   text	   data	    bss	    dec	    hex	filename
+  18732	     20	   2148	  20900	   51a4	GPIO_InfiniteLedToggling_Init.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO_InfiniteLedToggling_Init.list
+ 
+
+10:07:53 Build Finished. 0 errors, 2 warnings. (took 1s.66ms)
+

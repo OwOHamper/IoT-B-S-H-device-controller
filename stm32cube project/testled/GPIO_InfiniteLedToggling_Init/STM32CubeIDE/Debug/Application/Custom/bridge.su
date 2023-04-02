@@ -1,0 +1,2 @@
+../Application/Custom/bridge.c:60:6:ClearBuffers	16	static
+../Application/Custom/bridge.c:76:6:WaitForCommand	40	static
