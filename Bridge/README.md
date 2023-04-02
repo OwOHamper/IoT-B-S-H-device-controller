@@ -16,6 +16,11 @@ POST /set-device/{led_id}
 ```
 Set data for specific device
 ## Usage
+Install required packages:
+```bash
+pip install -r requirements.txt
+```
+
 You need to have uvicorn installed in order to start the server and then you can start the server with following command:
 ```bash
 uvicorn main:app --reload
