@@ -1,47 +1,23 @@
-from kivymd import uix_path
-from kivy.lang import Builder
-import os
 from kivy.clock import Clock
 from kivy.core.window import Window
-from kivy.properties import StringProperty, ObjectProperty, NumericProperty, BooleanProperty, ListProperty
 from kivymd.app import MDApp
 from kivymd.uix.screenmanager import ScreenManager
 from kivymd.uix.screen import Screen
-from kivy.uix.popup import Popup
-import json
 from functools import partial
-from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.button import MDRectangleFlatButton,MDRectangleFlatIconButton
-from kivymd.uix.boxlayout import BoxLayout
+from kivymd.uix.button import MDRectangleFlatIconButton
 from kivymd.uix.floatlayout import MDFloatLayout
-from kivymd.uix.dialog import MDDialog
-from kivymd.uix.button import MDFlatButton
 from kivymd.uix.button import MDIconButton
 from kivy.metrics import dp
 from kivymd.uix.label import MDLabel
 from kivy.graphics import *
-from kivy.uix.image import Image
-from kivymd.uix.button import MDRectangleFlatButton
-import random
-import ast
 from kivy.utils import platform
-from kivymd.uix.snackbar import Snackbar
-from kivymd.uix.toolbar import MDTopAppBar
 from kivymd.uix.behaviors import RoundedRectangularElevationBehavior
-from kivymd.uix.card import MDCard
-from kivy.uix.gridlayout import GridLayout
-from kivymd.uix.selectioncontrol.selectioncontrol import MDSwitch
-from kivy.uix.screenmanager import SlideTransition
 from kivy.graphics import Color
-from kivymd.uix.bottomnavigation.bottomnavigation import MDBottomNavigationHeader
-from kivy.animation import Animation
-from kivymd.uix.progressbar import MDProgressBar
-from kivymd.uix.button import MDFloatingActionButton, MDRaisedButton
 import requests
-from kivy.uix.button import Button
 from kivy.clock import Clock
 from kivymd.uix.pickers import MDColorPicker
 from typing import Union
+from kivy.properties import StringProperty
 class CustomMDColorPicker(MDColorPicker):
     def __init__(self, callback, **kwargs):
         super().__init__(**kwargs)
